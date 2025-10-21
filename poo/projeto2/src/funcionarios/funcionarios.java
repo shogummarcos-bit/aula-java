@@ -1,11 +1,12 @@
-public class Funcionario{
+package funcionarios;
+public class funcionarios{
     private String nome;
-    private Atring matricula;
+    private String matricula;
     private String genero;
-    public Funcionario(String nome, String matricula, String genero){
+    public funcionarios(String nome, String matricula, String genero){
         this.nome=nome;
         this.matricula=matricula;
-        this.genero=genro;
+        this.genero=genero;
     }
     public String getNome(){
         return nome;
@@ -28,7 +29,7 @@ public class Funcionario{
     public void atenderaluno(){
         System.out.println("atende o aluno");
     }
-    public void orientaauno(){
+    public void orientaaluno(){
         System.out.println("orienta o aluno no horário de aula");
     }
 
