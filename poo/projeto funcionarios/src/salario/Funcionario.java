@@ -1,11 +1,11 @@
 import java.util.Scanner;
 interface Pagamento{
-    double calcularPagamejnto();
+    double calcularPagamento();
 }
-abstract Funcionario implents Pagamento{
+abstract class Funcionario implements Pagamento{
     protected String nome;
     protected String genero;
-    protected String funcao;
+    protected String funcao; 
     protected double salario;
     protected String horario;
     protected String cargo;
