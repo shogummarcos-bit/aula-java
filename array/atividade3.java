@@ -1,11 +1,11 @@
 public class atividade3 {
     public static void main(String[] args) {
-        String[] nomes={"maria","beth","lara"};
-        System.out.println(nomes[0]);
-        System.out.println(nomes[2]);
-        for(String nome :nomes){
-            System.out.println(nome);
-
-        }
+        int[] pares={2,4,6,8,10};
+for(int i=0;i<pares.length;i++){
+    System.out.println(pares[i]);
+}    
+    for(int numero :pares){
+        System.out.println(numero);
     }
-}
+    }
+    }
