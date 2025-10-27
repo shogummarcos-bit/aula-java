@@ -1,10 +1,15 @@
-
+import java.util.arrays;
+import java.util.List;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
+        List<Funcionario> funcionarios=new ArraysList<>();
+        System.out.println("quantos funcioonarios dejseja cadastrar");
+        int quantidade=sc.nextInt();
         Scanner sc=new Scanner(System.in);
-        Funcionario funcionario=null;
-        System.out.println("nome:");
+
+        for(int i =0;i<quantidade;i++){
+            System.out.println("nome:");
         String nome=sc.nextLine();
         System.out.println("genero:");
         String genero=sc.nextLine();
@@ -25,9 +30,14 @@ public class App {
         System.out.println("gratificações:");
         double gratificacoes=sc.nextDouble();
 
-        funcionario=new Celetista(nome, genero, funcao, salario, horario, cargo, fundodegarantia, ferias, decimoterceiro, gratificacoes);
+        Funcionario funcionario=new Celetista(nome, genero, funcao, salario, horario, cargo, fundodegarantia, ferias, decimoterceiro, gratificacoes);
+        funcionarios.add(funcionario);
 
-       // Celetista funcionario1=new Celetista("Maria", "feminino","chefe de RH",5500.00, "8:00 as 17:00", "chefe de RH", 550.00, 5500.00, 2750.00, 1500.00);
+        }
+        Collections.sort(funcionarios, Comparator.comparing(Funcionarios::getNome));
+        System.out.println("funcionarios ordenados pro nome"); 
+        
+
 funcionario.calcularPagamento();
 funcionario.mostrarinfomacoes();
 
