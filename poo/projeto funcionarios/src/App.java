@@ -36,6 +36,9 @@ public class App {
         }
         Collections.sort(funcionarios, Comparator.comparing(Funcionarios::getNome));
         System.out.println("funcionarios ordenados pro nome"); 
+        for(Funcionario f:funcionarios ){
+            f.mostrarinformacoes();
+        }
         
 
 funcionario.calcularPagamento();
