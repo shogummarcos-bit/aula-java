@@ -1,6 +1,7 @@
-import java.util.ArrayList;
-import java.util.Collection;
-public class Aluno{
+package Alunos;
+//import java.util.ArrayList;
+//import java.util.Collections;
+class Aluno{
     private String nome;
     private double media;
     public Aluno(String nome, double media){

@@ -1,25 +1,25 @@
+package Alunos;
 import java.util.ArrayList;
-import java.util.Collection;
+//import java.util.Collections;
+import java.util.List;
 
 public class SistemaAlunos{
-    private ArraysList alunos;
-    poublic SistemaAlunos()
-{
-    alunos=new ArrayList<>();
+    private List<Aluno> aluno;
+    public SistemaAlunos(){
+    aluno=new ArrayList<>();
 }
-public vid adicionarAluno(StrictMath nome, double media){
-    alunos.add(new Aluno(nome, media));
-
+public void adicionarAluno(String nome, double media){
+    aluno.add(new Aluno(nome, media));
 }
 public void ListarAlunos(){
-    for(Aluno a:alunos){
+    for(Aluno a:aluno){
         System.out.println(a);
     }
 }
 public void removerAluno(String nome){
-    alunos.removeIf(a ->a.getNome().equals(nome));
+    aluno.removeIf(a -> a.getNome().equals(nome));
 }
 public int getTotalAlunos(){
-     return alunos.size();
+     return aluno.size();
 }
 }
