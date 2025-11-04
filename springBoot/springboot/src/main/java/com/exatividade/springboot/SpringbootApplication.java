@@ -1,4 +1,4 @@
-package com.exatividade.springboot;
+ package com.exatividade.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
