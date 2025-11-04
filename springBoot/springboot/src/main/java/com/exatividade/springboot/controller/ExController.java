@@ -13,9 +13,9 @@ public class ExController {
     public String home(){
         return "ola mundo";
     }
-    @GetMapping("/api/test/{numeroUm}")
-    public int teste(@PathVariable int numeroUm){
-        return numeroUm;
+    @GetMapping("/api/test/{numeroUm}/{numeridois}")
+    public int teste(@PathVariable int numeroUm,@PathVariable int numeridois){
+        return numeroUm+numeridois;
     }
     
 }
